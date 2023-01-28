@@ -1,6 +1,10 @@
-mod module_hello;
-use module_hello::module_hello_2::print_hello_2;
 fn main() {
-    module_hello::print_hello();  
-    print_hello_2(); 
+    let x = 1;
+    // !は何も返さないという意味、nothing型に近い
+    println!("x = {}", x);
+
+    // mutでミュータブルに宣言
+    let mut y = 2;
+    y += 1;
+    println!("y = {}", y);
 }

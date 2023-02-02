@@ -1,10 +1,8 @@
+fn myprint<T: std::fmt::Display>(msg: T) {
+    println!("{}", msg)
+}
 fn main() {
-    let x = 1;
-    // !は何も返さないという意味、nothing型に近い
-    println!("x = {}", x);
-
-    // mutでミュータブルに宣言
-    let mut y = 2;
-    y += 1;
-    println!("y = {}", y);
+    let s = "Hello".to_string();
+    myprint(s);
+    myprint(s);
 }

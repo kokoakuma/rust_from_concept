@@ -3,6 +3,7 @@ fn myprint<T: std::fmt::Display>(msg: T) {
 }
 fn main() {
     let s = "Hello".to_string();
+    let ss = s.clone();
     myprint(s);
-    myprint(s);
+    myprint(ss);
 }
